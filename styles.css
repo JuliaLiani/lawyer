@@ -1,0 +1,247 @@
+/* windows style */
+body {
+    background-color: #d6e6f2;
+    font-family: 'Roboto', sans-serif;
+}
+
+body:hover {
+    background-color: #f5eee6;
+}
+
+/* navigation bar position and style */
+.nav {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    background-color: #2d4059;
+}
+
+/* NAVIGATION BAR CHILD CLASS */
+.item {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NAVIGATION BAR LOGO CHILD CLASS */
+.logo {
+    margin-right: auto;
+}
+
+/* POSITION OF TOP AND BOTTOM IMAGE */
+.image_header,
+.image_bottom,
+.image_middle {
+    display: flex;
+}
+
+.image_header_src {
+    flex: 1;
+}
+
+.quote {
+    text-transform: uppercase;
+    align-self: center;
+    margin-left: 30px;
+    
+}
+/* HEADING POSITIONS */
+.heading_top,
+.heading_middle,
+.heading_bottom {
+
+text-align: center;
+}
+/* HEADING STYLE */
+.h3 {
+    color: #112d4e;
+    font-size: 30px
+}
+
+.h3:hover {
+    color: #07689f;
+}
+
+.container_expertise,
+.container_rates{
+    display: flex;
+    justify-content: space-evenly;
+}
+.container_expertise_child {
+    padding: 40px;
+    text-transform: uppercase;
+}
+
+.container_expertise_child:hover {
+    background-color: #384259;
+    color: #d6e6f2;
+}
+
+.image_bottom_src {
+    flex: 1;
+}
+
+.item_rates {
+    padding: 40px;
+    margin-top: 20px;
+}
+
+.item_rates:hover {
+    background-color: #384259;
+    color: #d6e6f2;
+}
+/* STUDY ON THIS ONE */
+.container_form {
+    display: flex;}
+
+
+.label,
+.button {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+button {
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    background-color: #112d4e;
+    color: #d6e6f2;
+}
+
+
+    
+    
+
+
+@media all and (max-width: 800px) {
+
+    
+
+    /* NAVIGATION BAR */
+.nav {
+        display: flex;
+        flex-direction: column; 
+        font-size: small;
+    }
+    
+ 
+    .item {
+        align-self: center;
+    }
+/* position of logo */
+    .logo {
+        margin-left: 40%;
+    }
+
+    .image_header_src,
+    .image_bottom_src,
+    .image_middle_src {
+
+        /* AFTER SO MANY TRIES WIDTH 100% WORKED, I USED TO SET 800PX AND 500PX AND IMAGE USED TO OVERFLOW */
+
+        width: 100%;
+        align-self: center;
+        overflow: hidden;
+    }
+
+    .image_middle {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .quote {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .h3 {
+        font-size: 20px;
+    }
+
+    .container_expertise {
+        justify-content: space-evenly;
+        margin: 20px 0px 10px 0px;
+    }
+
+    .container_expertise_child {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .item_rates {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+}
+
+/* IPHONE */
+
+@media all and (max-width: 500px){
+.nav {
+        display: flex;
+        flex-direction: column; 
+        font-size: small; 
+    }
+
+   
+
+    .item {
+        align-self: center;
+    }
+
+    /* position of logo */
+    .logo {
+        margin-left: 32%;
+    }
+
+    .image_header_src,
+    .image_bottom_src,
+    .image_middle_src {
+        width: 100%;
+        align-self: center;
+        overflow: hidden;
+        
+    }
+
+    .image_middle {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .quote {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .h3 {
+        font-size: 15px;
+    }
+
+    .container_expertise {
+        justify-content: space-evenly;
+        margin: 20px 0px 10px 0px;
+    }
+
+    .container_expertise_child {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    .item_rates {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px;
+        text-transform: uppercase;
+        font-size: 10px;
+           }
+    .label{
+        font-size: small;
+    }
+} 
